@@ -3,10 +3,7 @@ package com.ccfraser.muirwik.components
 import com.ccfraser.muirwik.components.form.*
 import kotlinx.html.InputType
 import org.w3c.dom.events.Event
-import react.RBuilder
-import react.RComponent
-import react.RProps
-import react.RState
+import react.*
 import styled.StyledHandler
 
 
@@ -57,6 +54,8 @@ interface MTextFieldProps : MFormControlProps {
 
     var type: String
     var value: String
+
+    var inputRef: RRef
 }
 var MTextFieldProps.color by EnumPropToString(MTextFieldColor.values())
 
